@@ -1,46 +1,51 @@
 package mx.com.qualitycode.moviesapp.api.models
 
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "movie")
 data class PopularMoviesModel(
+    @PrimaryKey(autoGenerate = false)
     @SerializedName("page")
-    var page: Int,
+    @ColumnInfo(name = "page") var page: Int,
     @SerializedName("results")
-    var results: List<Result>,
+    @ColumnInfo(name = "results")var results: List<Result>,
     @SerializedName("total_pages")
-    var totalPages: Int,
+    @ColumnInfo(name = "total_pages")var totalPages: Int,
     @SerializedName("total_results")
-    var totalResults: Int
+    @ColumnInfo(name = "total_results")var totalResults: Int
 ) {
     data class Result(
         @SerializedName("adult")
-        var adult: Boolean,
+        @ColumnInfo(name = "adult")var adult: Boolean,
         @SerializedName("backdrop_path")
-        var backdropPath: String,
+        @ColumnInfo(name = "backdrop_path")var backdropPath: String,
         @SerializedName("genre_ids")
-        var genreIds: List<Int>,
+        @ColumnInfo(name = "gere_ids")var genreIds: List<Int>,
         @SerializedName("id")
-        var id: Int,
+        @ColumnInfo(name = "id")var id: Int,
         @SerializedName("original_language")
-        var originalLanguage: String,
+        @ColumnInfo(name = "original_language")var originalLanguage: String,
         @SerializedName("original_title")
-        var originalTitle: String,
+        @ColumnInfo(name = "original_title")var originalTitle: String,
         @SerializedName("overview")
-        var overview: String,
+        @ColumnInfo(name = "overview")var overview: String,
         @SerializedName("popularity")
-        var popularity: Double,
+        @ColumnInfo(name = "popularity")var popularity: Double,
         @SerializedName("poster_path")
-        var posterPath: String,
+        @ColumnInfo(name = "poster_path")var posterPath: String,
         @SerializedName("release_date")
-        var releaseDate: String,
+        @ColumnInfo(name = "release_date")var releaseDate: String,
         @SerializedName("title")
-        var title: String,
+        @ColumnInfo(name = "title")var title: String,
         @SerializedName("video")
-        var video: Boolean,
+        @ColumnInfo(name = "video")var video: Boolean,
         @SerializedName("vote_average")
-        var voteAverage: Double,
+        @ColumnInfo(name = "vote_average")var voteAverage: Double,
         @SerializedName("vote_count")
-        var voteCount: Int
+        @ColumnInfo(name = "vote_count")var voteCount: Int
     )
 }

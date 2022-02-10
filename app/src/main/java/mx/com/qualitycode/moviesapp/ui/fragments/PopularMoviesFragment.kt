@@ -2,13 +2,11 @@ package mx.com.qualitycode.moviesapp.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_popular_movies.*
 import mx.com.qualitycode.moviesapp.R
 import mx.com.qualitycode.moviesapp.api.models.PopularMoviesModel

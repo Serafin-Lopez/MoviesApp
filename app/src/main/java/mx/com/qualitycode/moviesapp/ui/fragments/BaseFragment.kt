@@ -1,6 +1,5 @@
 package mx.com.qualitycode.moviesapp.ui.fragments
 
-import android.content.Context
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast

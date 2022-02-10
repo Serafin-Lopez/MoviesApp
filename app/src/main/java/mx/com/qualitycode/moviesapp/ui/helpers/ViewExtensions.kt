@@ -1,17 +1,12 @@
 package mx.com.qualitycode.moviesapp.ui.helpers
 
-import android.app.Activity
 import android.content.Context
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.RotateAnimation
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import mx.com.qualitycode.moviesapp.R
 
 /**
  * Extension functions to help to reduce the boilerplate when setting up visibility to views.
