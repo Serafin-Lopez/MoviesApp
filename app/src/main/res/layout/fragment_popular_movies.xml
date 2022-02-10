@@ -42,7 +42,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/watch_movies_and_series_now"
+        android:text="@string/watch_popular_movies"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="26sp"

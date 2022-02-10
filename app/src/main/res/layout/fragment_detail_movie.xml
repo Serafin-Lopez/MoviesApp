@@ -87,10 +87,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="6dp"
                 android:text="@string/release_date"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textViewOverview"
                 app:layout_constraintTop_toBottomOf="@+id/textViewOverview" />
 
@@ -103,6 +101,18 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/textViewOverview"
                 app:layout_constraintTop_toBottomOf="@+id/textViewOverview" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textViewReleaseDate"
+                app:layout_constraintStart_toStartOf="@+id/textViewReleaseDate"
+                app:layout_constraintTop_toBottomOf="@+id/textViewReleaseDate" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

@@ -2,8 +2,10 @@ package mx.com.qualitycode.moviesapp.api
 
 
 import mx.com.qualitycode.moviesapp.api.models.PopularMoviesModel
+import mx.com.qualitycode.moviesapp.api.models.VideoModel
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 /**
  * IMPORTANT: Adding this header to a particular request will make
@@ -25,5 +27,9 @@ interface ApiEndpoints {
 
     @GET("popular")
     fun getPopularMovies(): Call<PopularMoviesModel>
+
+    @GET("{id}/videos")
+    fun getMovie(@Path("id") id:Int): Call<VideoModel>
+
 
 }

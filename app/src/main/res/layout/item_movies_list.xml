@@ -11,6 +11,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="42dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginEnd="42dp"
         android:background="@drawable/style_card_shape"
         app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
@@ -30,7 +31,7 @@
 
     <TextView
         android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingBottom="32dp"
         android:text="@string/popular_movies"
@@ -38,7 +39,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/reflectionViewContainer"
+        app:layout_constraintStart_toStartOf="@+id/reflectionViewContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

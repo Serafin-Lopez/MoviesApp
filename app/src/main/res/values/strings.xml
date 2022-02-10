@@ -4,9 +4,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="playing_now">Playing Now</string>
     <string name="popular_movies">Pupular Movies</string>
-    <string name="watch_movies_and_series_now">watch movies and series now</string>
+    <string name="watch_movies_and_series_now">Watch movies and series now</string>
     <string name="title">Title</string>
     <string name="overview">Overview</string>
     <string name="release_date">Release Date</string>
     <string name="vote_count">Vote Count</string>
+    <string name="watch_popular_movies">Watch popular movies</string>
 </resources>
